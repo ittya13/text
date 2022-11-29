@@ -21,6 +21,13 @@
 
     if ($kadai_name=='') 
     {
+
+        print'氏名が入力されていません。<br/>';
+    }
+    else
+    {
+        print'氏名';
+
         print'スタッフ名が入力されていません。<br/>';
     }
     else
@@ -30,10 +37,26 @@
         print'<br/>';
     }
     if($kadai_pass==''){
+
+        print'ふりがなが入力されていません。<br/>';
+    }
+    if($kadai_pass2==''){
+        print'郵便番号が入力されていません。<br/>';
+    }
+    if($kadai_juusyo==''){
+        print'住所が入力されていません。<br/>';
+    }
+    if($kadai_denwa==''){
+        print'電話番号が入力されていません。<br/>';
+    }
+    if($kadai_mail==''){
+        print'Eメールアドレスが入力されていません。<br/>';
+
         print'パスワードが入力されていません。<br/>';
     }
     if($kadai_pass!=$kadai_pass2){
         print'パスワードが一致しません。<br/>';
+
     }
     if($kadai_name==''||$kadai_pass=''||$kadai_pass!=$kadai_pass2){
         print'<form>';

@@ -38,11 +38,20 @@
         <form method="post" action="edit_check.php">
             <input type="hidden" name="code" value="<?php print $kadai_code;?>">
             IDを入力してください<br/>
+
+            <input type="text" name="name" style="width: 100px" value="<?php print $kadai_name; ?>"><br/>
+            氏名を入力してください<br/>
+            <input type="password" name="pass" style="width:100px"><br/>
+            ふりがなを入力してください<br/>
+            <input type="password" name="pass2" style="width:100px"><br/>
+            郵便番号入力してください<br/>
+
             <input type="text" name="name" style="width: 200px" value="<?php print $kadai_name; ?>"><br/>
             パスワードを入力してください<br/>
             <input type="password" name="pass" style="width:100px"><br/>
             パスワードをもう１度入力してください<br/>
             <input type="password" name="pass2" style="width:100px"><br/>
+
             <br/>
             <input type="button" onclick="history.back()" value="戻る">
             <input type="submit" value="ＯＫ">

@@ -9,6 +9,18 @@
     
     一覧<br/>
     <br/>
+
+    <form method="post" action="add_cheak.php">
+        ID<br/>
+        <input type="code" name="code" style="width:200px"><br/>
+
+        氏名<br/>
+        <input type="name" name="name" style="width:100px"><br/>
+
+        ふりがな<br/>
+        <input type="pass" name="pass" style="width:200px"><br/>
+
+
     <form method="post" action="kadai_add_cheak.php">
         ID<br/>
         <input type="code" name="code" style="width:200px"><br/>
@@ -16,6 +28,7 @@
         <input type="name" name="name" style="width:100px"><br/>
         ふりがな<br/>
         <input type="pass" name="pass" style="width:200px"><br/>
+
         郵便番号<br/>
         <input type="pass2" name="pass2" style="width:200px"><br/>
         住所<br/>
