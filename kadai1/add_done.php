@@ -2,11 +2,13 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache">
     <title>課題１</title>
 </head>
 <body>
     <?php
     try{
+   
     $kadai_name=$_POST['name'];
     $kadai_pass=$_POST['pass'];
 
@@ -14,7 +16,8 @@
     $kadai_juusyo=$_POST['juusyo'];
     $kadai_denwa=$_POST['denwa'];
     $kadai_mail=$_POST['mail'];
-
+    
+   
     $kadai_name=htmlspecialchars($kadai_name,ENT_QUOTES,'UTF-8');
     $kadai_pass=htmlspecialchars($kadai_pass,ENT_QUOTES,'UTF-8');
     $kadai_pass2=htmlspecialchars($kadai_pass2,ENT_QUOTES,'UTF-8');
@@ -22,29 +25,21 @@
     $kadai_denwa=htmlspecialchars($kadai_denwa,ENT_QUOTES,'UTF-8');
     $kadai_mail=htmlspecialchars($kadai_mail,ENT_QUOTES,'UTF-8');
 
-
-
-    $kadai_name=htmlspecialchars($kadai_name,ENT_QUOTES,'UTF-8');
-    $kadai_pass=htmlspecialchars($kadai_pass,ENT_QUOTES,'UTF-8');
-
     $dsn='mysql:dbname=shop;host=localhost;charset=utf8';
     $user='root';
     $password='';
     $dbh=new PDO($dsn,$user,$password);
     $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-    $sql='INSERT INTO mst_kadai(name,password)VALUES(?,?)';
+    $sql='INSERT INTO kojin(name,pass,pass2,juusyo,denwa,mail)VALUES(?,?,?,?,?,?)';
     $stmt=$dbh->prepare($sql);
 
-
+    
     $data[] = $kadai_name;
     $data[] = $kadai_pass;
     $data[] = $kadai_pass2;
     $data[] = $kadai_juusyo;
     $data[] = $kadai_denwa;
     $data[] = $kadai_mail;
-
-    $data[] = $kadai_name;
-    $data[] = $kadai_pass;
 
     $stmt->execute($data);
     $dbh=null;

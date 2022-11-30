@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="kadai.css">
     <meta charset="UTF-8">
     <title>課題１</title>
+    <meta http-equiv="Cache-Control" content="no-cache">
 </head>
 <body>
     
@@ -11,19 +12,7 @@
     <br/>
 
     <form method="post" action="add_cheak.php">
-        ID<br/>
-        <input type="code" name="code" style="width:200px"><br/>
-
-        氏名<br/>
-        <input type="name" name="name" style="width:100px"><br/>
-
-        ふりがな<br/>
-        <input type="pass" name="pass" style="width:200px"><br/>
-
-
-    <form method="post" action="kadai_add_cheak.php">
-        ID<br/>
-        <input type="code" name="code" style="width:200px"><br/>
+       
         氏名<br/>
         <input type="name" name="name" style="width:100px"><br/>
         ふりがな<br/>
@@ -38,8 +27,8 @@
         Eメールアドレス<br/>
         <input type="mail" name="mail" style="width:100px"><br/>
       <br/>
-      <input type="button" onclick="history.back()">戻る</button>
-      <input type="submit">ＯＫ</button>
+      <button type="button" onclick="history.back()">戻る</button>
+      <button type="submit">ＯＫ</button>
     </form>
 </body>
 </html>

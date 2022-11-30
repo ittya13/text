@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache">
     <title>課題１</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
     $kadai_denwa=$_POST['denwa'];
     $kadai_mail=$_POST['mail'];
 
-
+   
     $kadai_name=htmlspecialchars($kadai_name,ENT_QUOTES,'UTF-8');
     $kadai_pass=htmlspecialchars($kadai_pass,ENT_QUOTES,'UTF-8');
     $kadai_pass2=htmlspecialchars($kadai_pass2,ENT_QUOTES,'UTF-8');
@@ -27,10 +28,11 @@ if ($kadai_name=='')
     }
     else
     {
-        print'氏名';
+        print'名前は';
         print$kadai_name;
         print'<br/>';
     }
+   
     if($kadai_pass==''){
 
         print'ふりがなが入力されていません。<br/>';
@@ -48,23 +50,19 @@ if ($kadai_name=='')
     if($kadai_mail==''){
         print'Eメールアドレスが入力されていません。<br/>';
     }
-    if($kadai_name==''||$kadai_pass=''){
-
-        print'パスワードが入力されていません。<br/>';
-    }
+   
     //ここまで
-    if($kadai_pass!=$kadai_pass2){
-        print'パスワードが一致しません。<br/>';
-    }
-    if($kadai_name==''||$kadai_pass=''||$kadai_pass!=$kadai_pass2){
+    
+    if($kadai_name==''||$kadai_pass==''||$kadai_pass2==''||$kadai_juusyo==''||$kadai_denwa==''||$kadai_mail==''){
 
         print'<form>';
         print'<input type="button" onclick="history.back()" value = "戻る">';
         print'<form>';
     }
     else{
-        $kadai_pass=md5( $kadai_pass) ;
+       
         print' <form method="post" action="add_done.php">';
+       
         print'<input type="hidden" name="name" value="'.$kadai_name.'">';
         print'<input type="hidden" name="pass" value="'.$kadai_pass.'">';
 

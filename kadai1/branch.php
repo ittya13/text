@@ -10,9 +10,9 @@ if(isset($_POST['disp'])==true){
     exit();
 }
 
-if(isset($_POST['add'])==true)
+if(isset($_POST['itiran'])==true)
 {
-    header('Location:add.php');
+    header('Location:itiran.php');
     exit();
 }
 

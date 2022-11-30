@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache">
     <title>課題１</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
         $password='';
         $dbh=new PDO($dsn,$user,$password);
         $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-        $sql='SELECT code,name FROM mst_kadai WHERE code=?';
+        $sql='SELECT code,name FROM kojin WHERE code=?';
         $stmt=$dbh->prepare($sql);
         $data[]=$kadai_code;
         $stmt->execute($data);
@@ -24,7 +25,10 @@
         catch(Exception $e)
         {
             print'ただいま障害により大変ご迷惑をお掛けしております。';
+            print $e->getMessage();
+
             exit();
+            
         }
         ?>
         
