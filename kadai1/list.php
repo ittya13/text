@@ -14,7 +14,7 @@
         $password='';
         $dbh=new PDO($dsn,$user,$password);
         $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-        $sql='SELECT code,name FROM kojin WHERE 1';
+        $sql='SELECT code,name,pass FROM kojin WHERE 1';
         $stmt=$dbh->prepare($sql);
         $stmt->execute();
         $dbh=null;
@@ -29,7 +29,11 @@
             }
            
             print'<input type="radio" name="kadaicode" value="'.$rec['code'].'">';
+            print$rec['code'];
+            print'<br/>';
             print$rec['name'];
+            print'<br/>';
+            print$rec['pass'];
             print'<br/>';
         }
         print'<button type="submit" name="disp">個別表示</button>';
