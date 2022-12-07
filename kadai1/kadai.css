@@ -1,13 +1,21 @@
 @charset "utf-8";
 
+html{
+    background-color: aliceblue;
+}
 body{
-   color:black;
+   color:aqua;
    font-size: 20px;
-   
+   background-color: hotpink;
+   padding-left: 30px;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   margin-right: 40%;
+   margin-top: 20px;
 }
 button{
     font-size: 50%;
-    width: 10%;
+    width: 15%;
 }
 input[type=radio]{
     width: 20px;

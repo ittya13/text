@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<link rel="stylesheet" href="kadai.css">
     <meta charset="UTF-8">
     <meta http-equiv="Cache-Control" content="no-cache">
     <title>課題１</title>
