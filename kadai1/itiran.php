@@ -18,15 +18,15 @@
         ふりがな<br/>
         <input type="pass" name="pass" style="width:200px"><br/>
 
-        郵便番号<br/>
-        <input type="pass2" name="pass2" style="width:200px"><br/>
-        住所<br/>
-        <input type="juusyo" name="juusyo" style="width:200px"><br/>
-        電話番号<br/>
-        <input type="denwa" name="denwa" style="width:200px"><br/>
-        Eメールアドレス<br/>
-        <input type="mail" name="mail" style="width:100px"><br/>
-      <br/>
+        郵便番号を入力してください<br/>
+            <input type="number" name="pass2" style="width: 200px"><br/>
+            住所を入力してください<br/>
+            <input type="text" name="juusyo" style="width: 200px"><br/>
+            電話番号を入力してください<br/>
+            <input type="number" name="denwa" style="width: 200px"><br/>
+            Eメールアドレスを入力してください<br/>
+            <input type="email" name="mail" style="width: 200px"><br/>
+            <br/>
       <button type="button" onclick="history.back()">戻る</button>
       <button type="submit">ＯＫ</button>
     </form>

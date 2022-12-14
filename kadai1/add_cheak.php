@@ -43,10 +43,10 @@ if ($kadai_name=='')
         print'郵便番号が入力されていません。<br/>';
     }
     if($kadai_juusyo==''){
-        print'<住所が入力されていません。br/>';
+        print'住所が入力されていません。<br/>';
     }
     if($kadai_denwa==''){
-        print'<電話番号が入力されていません。br/>';
+        print'電話番号が入力されていません。<br/>';
     }
     if($kadai_mail==''){
         print'Eメールアドレスが入力されていません。<br/>';
