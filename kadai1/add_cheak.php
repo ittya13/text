@@ -73,8 +73,8 @@ if ($kadai_name=='')
         print'<input type="hidden" name="mail" value="'.$kadai_mail.'">';
 
         print'<br/>';
-        print'<input type="button" onclick="history.back()" value="戻る">';
-        print'<input type="submit" value="ＯＫ">';
+        print'<button type="button" onclick="history.back()">戻る</button>';
+        print'<button type="submit">ＯＫ</button>';
         print'</form>';
     }
     ?>

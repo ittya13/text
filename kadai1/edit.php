@@ -43,10 +43,10 @@
         <form method="post" action="edit_check.php">
         <input type="hidden" name="code" value="<?php print $kadai_code;?>">
             氏名を入力してください<br/>
-            <input type="text" name="name" style="width: 100px" value="<?php print $kadai_name; ?>"><br/>
+            <input type="text" name="name" style="width: 200px" value="<?php print $kadai_name; ?>"><br/>
            
             ふりがなを入力してください<br/>
-            <input type="text" name="pass" style="width:100px"><br/>
+            <input type="text" name="pass" style="width:200px"><br/>
             郵便番号を入力してください<br/>
             <input type="number" name="pass2" style="width: 200px"><br/>
             住所を入力してください<br/>

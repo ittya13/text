@@ -14,7 +14,7 @@
     <form method="post" action="add_cheak.php">
        
         氏名<br/>
-        <input type="name" name="name" style="width:100px"><br/>
+        <input type="name" name="name" style="width:200px"><br/>
         ふりがな<br/>
         <input type="pass" name="pass" style="width:200px"><br/>
 
