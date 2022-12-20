@@ -31,8 +31,17 @@
         print$pro_price;
         print'円<br/>';
     }
-    
-    if($pro_name==''||$pro_match('/￥A[0-9]+￥z/',$pro_price)==0){
+    if($pro_gazou['size'] > 0){
+        if($pro_gazou['size'] > 1000000){
+        print'画像が大き過ぎます。<br/>';
+        }
+        else{
+            move_uploaded_file($pro_gazou['tmp_name'],'./gazou/'.$pro_gazou['name']);
+            print'<img src="./gazou/'.$pro_gazou['name'].'">';
+            print'<br/>';
+        }
+    }
+    if($pro_name==''||$pro_match('/￥A[0-9]+￥z/',$pro_price)==0 ||$pro_gazou['size']>1000000){
         print'<form>';
         print'<input type="button" onclick="history.back()" value = "戻る">';
         print'<form>';
@@ -41,6 +50,7 @@
         print'上記の商品を追加します。<br/>';
         print' <form method="post" action="pro_add_done.php">';
         print'<input type="hidden" name="name" value="'.$pro_name.'">';
+        print'<input type="hidden" name="price" value="'.$pro_price.'">';
         print'<input type="hidden" name="price" value="'.$pro_price.'">';
         print'<br/>';
         print'<input type="button" onclick="history.back()" value="戻る">';
