@@ -7,8 +7,8 @@
 <body>
     <?php
     try{
-        $pro_code=$_POST['code'];
-
+     $pro_code=$_POST['code'];
+     $pro_gazou_name=$_POST['gazou_name'];
     $dsn='mysql:dbname=shop;host=localhost;charset=utf8';
     $user='root';
     $priceword='';
@@ -19,6 +19,10 @@
     $data[] = $pro_code;
     $stmt->execute($data);
     $dbh=null;
+
+    if($pro_gazou_name!=''){
+        unlink('./gazou/'.$pro_gazou_name);
+    }
 }
 catch(Exception $e)
 {

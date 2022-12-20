@@ -23,7 +23,7 @@
         print$pro_name;
         print'<br/>';
     }
-    if($preg_match('/￥A[0-9]+￥z/',$pro_price)==0){
+    if(preg_match('/\A[0-9]+\z/',$pro_price)==0){
         print'価格をきちんと入力してください。<br/>';
     }
     else{
@@ -41,7 +41,7 @@
             print'<br/>';
         }
     }
-    if($pro_name==''||$pro_match('/￥A[0-9]+￥z/',$pro_price)==0 ||$pro_gazou['size']>1000000){
+    if($pro_name==''||preg_match('/\A[0-9]+\z/',$pro_price)==0 ||$pro_gazou['size']>1000000){
         print'<form>';
         print'<input type="button" onclick="history.back()" value = "戻る">';
         print'<form>';
@@ -51,7 +51,7 @@
         print' <form method="post" action="pro_add_done.php">';
         print'<input type="hidden" name="name" value="'.$pro_name.'">';
         print'<input type="hidden" name="price" value="'.$pro_price.'">';
-        print'<input type="hidden" name="price" value="'.$pro_price.'">';
+        print'<input type="hidden" name="gazou_name" value="'.$pro_gazou['name'].'">';
         print'<br/>';
         print'<input type="button" onclick="history.back()" value="戻る">';
         print'<input type="submit" value="ＯＫ">';

@@ -12,7 +12,7 @@
         $priceword='';
         $dbh=new PDO($dsn,$user,$priceword);
         $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-        $sql='SELECT code,name FROM mst_pro WHERE 1';
+        $sql='SELECT code,name,price FROM mst_product WHERE 1';
         $stmt=$dbh->prepare($sql);
         $stmt->execute();
         $dbh=null;
@@ -39,6 +39,7 @@
     catch(Exception $e)
     {
         print'ただいま障害により大変ご迷惑お掛けしております。';
+        print $e->getMessage();
         exit();
     }
     ?>
