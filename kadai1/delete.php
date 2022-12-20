@@ -46,8 +46,8 @@
             <form method="post" action="delete_done.php">
             <input type="hidden" name="code" value="<?php print $kadai_code;?>">
            
-            <input type="button" onclick="history.back()" value="戻る">
-            <input type="submit" value="ＯＫ">
+            <button type="button" onclick="history.back()" >戻る</button>
+            <button type="submit">ＯＫ</button>
         </form>
 </body>
 </html>

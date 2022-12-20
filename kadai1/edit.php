@@ -43,21 +43,21 @@
         <form method="post" action="edit_check.php">
         <input type="hidden" name="code" value="<?php print $kadai_code;?>">
             氏名を入力してください<br/>
-            <input type="text" name="name" style="width: 100px" value="<?php print $kadai_name; ?>"><br/>
+            <input type="text" name="name" style="width: 200px" value="<?php print $kadai_name; ?>"><br/>
            
             ふりがなを入力してください<br/>
-            <input type="text" name="pass" style="width:100px"><br/>
+            <input type="text" name="pass" style="width:200px"><br/>
             郵便番号を入力してください<br/>
-            <input type="text" name="pass2" style="width: 200px"><br/>
+            <input type="number" name="pass2" style="width: 200px"><br/>
             住所を入力してください<br/>
             <input type="text" name="juusyo" style="width: 200px"><br/>
             電話番号を入力してください<br/>
-            <input type="text" name="denwa" style="width: 200px"><br/>
+            <input type="number" name="denwa" style="width: 200px"><br/>
             Eメールアドレスを入力してください<br/>
-            <input type="text" name="mail" style="width: 200px"><br/>
+            <input type="email" name="mail" style="width: 200px"><br/>
             <br/>
-            <input type="button" onclick="history.back()" value="戻る">
-            <input type="submit" value="ＯＫ">
+            <button type="button" onclick="history.back()" >戻る</button>
+            <button type="submit">ＯＫ</button>
         </form>
 </body>
 </html>

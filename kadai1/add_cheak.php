@@ -43,10 +43,10 @@ if ($kadai_name=='')
         print'郵便番号が入力されていません。<br/>';
     }
     if($kadai_juusyo==''){
-        print'<住所が入力されていません。br/>';
+        print'住所が入力されていません。<br/>';
     }
     if($kadai_denwa==''){
-        print'<電話番号が入力されていません。br/>';
+        print'電話番号が入力されていません。<br/>';
     }
     if($kadai_mail==''){
         print'Eメールアドレスが入力されていません。<br/>';
@@ -73,8 +73,8 @@ if ($kadai_name=='')
         print'<input type="hidden" name="mail" value="'.$kadai_mail.'">';
 
         print'<br/>';
-        print'<input type="button" onclick="history.back()" value="戻る">';
-        print'<input type="submit" value="ＯＫ">';
+        print'<button type="button" onclick="history.back()">戻る</button>';
+        print'<button type="submit">ＯＫ</button>';
         print'</form>';
     }
     ?>
