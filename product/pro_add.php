@@ -16,8 +16,8 @@
         画像を選んでください。<br/>
         <input type="file" name="gazou" style="width:400px"><br/>
       <br/>
-      <input type="button" onclick="history.back()">戻る</button>
-      <input type="submit">ＯＫ</button>
+      <button type="button" onclick="history.back()">戻る</button>
+      <button type="submit">ＯＫ</button>
     </form>
 </body>
 </html>

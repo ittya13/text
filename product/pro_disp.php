@@ -13,10 +13,11 @@
         $priceword='';
         $dbh=new PDO($dsn,$user,$priceword);
         $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-        $sql='SELECT code,price,gazou FROM mst_product WHERE code=?';
+        $sql='SELECT name,price,gazou FROM mst_product WHERE code=?';
         $stmt=$dbh->prepare($sql);
         $data[]=$pro_code;
         $stmt->execute($data);
+
         $rec=$stmt->fetch(PDO::FETCH_ASSOC);
         $pro_name=$rec['name'];
         $pro_price=$rec['price'];

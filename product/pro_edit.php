@@ -24,7 +24,7 @@
         $pro_gazou_name_old=$rec['gazou'];
         $dbh=null;
 
-        if($pro_gazou_name_old==){
+        if($pro_gazou_name_old==''){
             $disp_gazou='';
         }
         else{
