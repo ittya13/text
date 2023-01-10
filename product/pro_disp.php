@@ -44,7 +44,10 @@
         <?php print $pro_code;?>
         <br/>
         商品名<br/>
-        <?php print $pro_code;?>
+        <?php print $pro_name;?>
+        <br/>
+        価格<br/>
+        <?php print $pro_price;?>
         <br/>
         <?php print $disp_gazou;?>
         <br/>
