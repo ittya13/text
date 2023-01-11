@@ -1,0 +1,18 @@
+h1{
+    background-color: darkgreen;
+    font-size: 30px;
+    margin: 0px;
+}
+body{
+   bo
+}
+tr{
+    border: solid 1px; border-collapse: collapse;
+}
+td,th{
+    max-width: 35px;
+}
+image{
+    height: 50px;
+    max-width: 600px;
+}
