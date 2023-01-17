@@ -11,6 +11,11 @@
 <body>
     <?php
     try{
+        $pro_title=$_POST['title'];
+        $pro_file=$_FILES['file'];
+        $pro_title=htmlspecialchars($pro_title,ENT_QUOTES,'UTF-8');
+       
+
         $dsn='mysql:dbname=shop;host=localhost;charset=utf8';
         $user='root';
         $descriptionword='';
@@ -20,6 +25,9 @@
         $stmt=$dbh->prepare($sql);
         $stmt->execute();
         $dbh=null;
+
+        $data[] = $pro_title;
+        $data[] = $pro_file;
         print'商品一覧<br/><br/>';
         print'<form method="post" action="pro_branch.php">';
         while(true)
@@ -29,6 +37,9 @@
             {
                 break;
             }
+            $pro_id=$pro_id;
+            $pro_title=$pro_title;
+            $pro_file=$pro_file;
             print'<input type="radio" name="proid" value="'.$rec['id'].'">';
             print$rec['title'].'';
             print$rec['description'].'';
@@ -47,15 +58,24 @@
         exit();
     }
     ?>
-
-    <table>
+    <table border="1">
         <tr>
-            <th>ID</th><th>タイトル</th><th>サムネイル</th>
+            <td>ID</td>
+            <td>タイトル</td>
+            <td>サムネイル</td>
         </tr>
+    <?php for($i=0;$i<count($pro_file);$i++)
+    {
+        ?>
         <tr>
-            <th><?=$title?></th>
+            <td><?php   print$pro_id[$i];?></td>
+            <td><?php   print$pro_title[$i];?></td>
+            <td><?php   print$pro_file[$i];?></td>
         </tr>
+        <?php
+    }
+    ?>
     </table>
-    /*for文で配列取り出し */
 </body>
 </html>
+<!-- /*for文で配列取り出し */ -->
