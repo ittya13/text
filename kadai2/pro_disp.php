@@ -2,10 +2,14 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <link href="./kadai2.css" rel="stylesheet">
+    <link href="./disp.css" rel="stylesheet">
     <title>ろくまる農園</title>
 </head>
+<header>
+    <h1>画像の表示</h1>
+</header>
 <body>
+    <div class="gazo">
 <?php
     try{
         $pro_id=$_GET['proid'];
@@ -39,16 +43,15 @@
         }
         ?>
         
-        商品情報参照<br/>
+        
         <br/>
-        商品コード<br/>
-        <?php print $pro_id;?>
-        <br/>
-        タイトル<br/>
+        【タイトル】
         <?php print $pro_title;?>
         <br/>
-        説明<br/>
+        【説明】<br/>
+        <div class="zisage">
         <?php print $pro_description;?>
+        </div>
         <br/>
         <?php print $disp_file;?>
         <br/>
@@ -56,5 +59,6 @@
        <form>
             <input type="button" onclick="history.back()" value="戻る">
         </form>
+        </div>
 </body>
 </html>

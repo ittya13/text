@@ -43,7 +43,8 @@
             <td><?php print'<input type="radio" name="proid" value="'.$rec['id'].'">';?></td>
             <td><?php   print$rec['id'].'<br />';?></td>
             <td><?php   print$rec['title'].'<br />';?></td>
-            <td><?php   print'<img class="./image/'.$rec['file'].'">';?></td>
+            
+            <td><?php   print'<img class="images"src="./image/'.$rec['file'].'">';?></td>
            </tr>
 
             <?php
@@ -61,10 +62,10 @@
    
     </table>
     <?php
-     print'<input type="submit" name="disp" value="参照">';
-     print'<input type="submit" name="add" value="追加">';
-     print'<input type="submit" name="edit" value="修正">';
-     print'<input type="submit" name="delete" value="削除">';
+     print'<input class="button" type="submit" name="disp" value="参照">';
+     print'<input class="button" type="submit" name="add" value="追加">';
+     print'<input class="button" type="submit" name="edit" value="修正">';
+     print'<input class="button" type="submit" name="delete" value="削除">';
      print'</form>';
     ?>
 </body>
