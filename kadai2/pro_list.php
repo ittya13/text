@@ -64,7 +64,6 @@
     <?php
      print'<input class="button" type="submit" name="disp" value="参照">';
      print'<input class="button" type="submit" name="add" value="追加">';
-     print'<input class="button" type="submit" name="edit" value="修正">';
      print'<input class="button" type="submit" name="delete" value="削除">';
      print'</form>';
     ?>

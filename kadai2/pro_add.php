@@ -19,7 +19,7 @@
         </td>
         <td>
             <div class="textbox">
-        <textarea name="title" style="width:400px"></textarea><br/>
+        <input type="text" name="title" style="width:400px"></textarea><br/>
         </div>
         </td>
         </tr>

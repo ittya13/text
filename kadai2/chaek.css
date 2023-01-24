@@ -7,19 +7,19 @@ h1{
     margin-bottom: 1%;
 }
 body{
+  text-align: center;
   margin: 0%;
   padding: 0%;
   background-color: rgb(198, 242, 245);
-  font-size:20px;
-}
-.add{
-   
 }
 table{
    margin-left: auto;
    margin-right: auto;
-  
+   width: 25%;
    border-collapse: collapse;
+}
+img{
+    max-width: 600px;
 }
 tr{
    width: 40px;
@@ -27,8 +27,6 @@ tr{
 }
 td{
     border-collapse: collapse;
-   
-    padding: 5px;
 }
 th{
     border-collapse: collapse;
@@ -38,14 +36,4 @@ th{
 }
 .button{
     margin: 0.5%;
-    margin-left: 32%;
-}
-button{
-    font-size: 20px;
-}
-.textbox{
-    height: 200%;
-}
-textarea{
-    font-size:30px;
 }
