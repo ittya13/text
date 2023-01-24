@@ -2,11 +2,17 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <link href="./kadai2.css" rel="stylesheet">
+    <link href="./ng.css" rel="stylesheet">
     <title>ろくまる農園</title>
 </head>
+<header>
+    <h1>画像選択エラー</h1>
+</header>
 <body>
-    商品が選択されてません。</br>
-    <a href="pro_list.php">戻る</a>
+    <div class="set">
+    画像が選択されてません。</br>
+    </br>
+    <input type="button" onclick="history.back()" value="戻る">
+    </div>
 </body>
 </html>
