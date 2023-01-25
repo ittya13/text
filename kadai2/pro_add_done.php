@@ -36,6 +36,6 @@ catch(Exception $e)
 }
     
     ?>
-    <a href="pro_list.php">戻る</a>
+    <button href="pro_list.php">戻る</button>
 </body>
 </html>

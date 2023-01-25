@@ -18,7 +18,7 @@
    ?>
     <table border="1">
         <tr>
-            <td>
+            <td class="yoko1">
                 <?php
     if ($pro_title=='') 
     {
@@ -37,39 +37,48 @@
     </td>
     </tr>
     <tr>
-            <td>
+       
+            <td class="yoko1">
                 <?php
     if($pro_description==''){
         print'説明をきちんと入力してください。<br/>';
     }
     else{
-        print'説明:';
+        print'説明';
         ?>
         </td>
         <td>
         <?php
         print$pro_description;
+        
     }
     ?>
     </td>
     </tr>
-    <tr>
-    <td>
+   
                 <?php
     if($pro_file['size'] > 0){
+        ?>
+         <tr>
+    <td class="yoko1">
+        <?php
         if($pro_file['size'] > 1000000){
+          
+    
         print'画像が大き過ぎます。<br/>';
         }
         else{
             print '画像';
             ?>
              </td>
-            <td>
+           
+            <td class="imgdayo">
              <?php
             move_uploaded_file($pro_file['tmp_name'],'./image/'.$pro_file['name']);
             print'<img src="./image/'.$pro_file['name'].'">';
            ?>
-       
+            </td>
+     </tr>
         <?php
         }
     }
