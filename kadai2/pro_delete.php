@@ -2,9 +2,12 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <link href="./kadai2.css" rel="stylesheet">
+    <link href="./delete.css" rel="stylesheet">
     <title>ろくまる農園</title>
 </head>
+<header>
+    <h1>画像の削除確認</h1>
+</header>
 <body>
 <?php
     try{
@@ -35,18 +38,16 @@
             exit();
         }
         ?>
-        
-        商品削除<br/>
-        <br/>
-        商品コード<br/>
+       <div class="gazo">
+        ID
         <?php print $pro_id;?>
         <br/>
-            タイトル<br/>
+            タイトル
             <?php print $pro_title; ?>
             </br>
             <?php print $disp_file; ?>
             </br>
-            この商品を削除してよろしいですか？</br>
+            このファイルを削除してよろしいですか？</br>
             </br>
             <form method="post" action="pro_delete_done.php">
             <input type="hidden" name="id" value="<?php print $pro_id;?>">
@@ -54,5 +55,6 @@
             <input type="button" onclick="history.back()" value="戻る">
             <input type="submit" value="ＯＫ">
         </form>
+        </div>
 </body>
 </html>
