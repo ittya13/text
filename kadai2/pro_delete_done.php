@@ -30,7 +30,8 @@ catch(Exception $e)
     print'ただいま障害により大変ご迷惑をお掛けしております。';
     exit();
 }
-    
+header("location:done.php?mess=削除が完了しました");
+
     ?>
     削除しました。<br>
     <br/>

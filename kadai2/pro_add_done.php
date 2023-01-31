@@ -34,8 +34,10 @@ catch(Exception $e)
     print $e->getMessage();
     exit();
 }
-    
+
+header("location:done.php?mess=登録が完了しました");
+
     ?>
-    <button href="pro_list.php">戻る</button>
+    <a href="pro_list.php">戻る</a>
 </body>
 </html>
