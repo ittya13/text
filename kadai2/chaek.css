@@ -43,3 +43,8 @@ th{
 .yoko1{
     width: 200px;
 }
+button{
+    width: 80px;
+    font-size: 30px;
+    margin: 0.5%;
+}

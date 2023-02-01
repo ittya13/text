@@ -85,7 +85,7 @@
     <?php
     if ($pro_title == '' || $pro_description == '' || $pro_file['size'] > 1000000) {
         print '<form>';
-        print '<input type="button" onclick="history.back()" value = "戻る">';
+        print '<button type="button" onclick="history.back()">戻る</button>';
         print '<form>';
     } else {
         print 'この画像を登録しますか<br/>';
@@ -94,8 +94,8 @@
         print '<input type="hidden" name="description" value="' . $pro_description . '">';
         print '<input type="hidden" name="file_name" value="' . $pro_file['name'] . '">';
         print '<br/>';
-        print '<input type="button" onclick="history.back()" value="戻る">';
-        print '<input type="submit" value="ＯＫ">';
+        print '<button type="button" onclick="history.back()">戻る</button>';
+        print '<button type="submit">ＯＫ</button>';
         print '</form>';
     }
 

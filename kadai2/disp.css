@@ -22,3 +22,8 @@ body{
 .button{
     margin: 0.5%;
 }
+button{
+    width: 80px;
+    font-size: 30px;
+    margin: 0.5%;
+}

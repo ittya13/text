@@ -62,9 +62,9 @@
    
     </table>
     <?php
-     print'<input class="button" type="submit" name="disp" value="参照">';
-     print'<input class="button" type="submit" name="add" value="追加">';
-     print'<input class="button" type="submit" name="delete" value="削除">';
+     print'<button type="submit" name="disp">参照</button>';
+     print'<button type="submit" name="add">追加</button>';
+     print'<button type="submit" name="delete">削除</button>';
      print'</form>';
     ?>
 </body>

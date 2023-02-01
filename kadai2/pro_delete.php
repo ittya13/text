@@ -52,8 +52,8 @@
             <form method="post" action="pro_delete_done.php">
             <input type="hidden" name="id" value="<?php print $pro_id;?>">
             <input type="hidden" name="file_name" value="<?php print $pro_file_name;?>">
-            <input type="button" onclick="history.back()" value="戻る">
-            <input type="submit" value="ＯＫ">
+            <a href="pro_list.php"><button type="button">戻る</button></a>
+            <button type="submit">ＯＫ</button>
         </form>
         </div>
 </body>

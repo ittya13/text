@@ -12,7 +12,7 @@
     <div class="set">
     画像が選択されてません。</br>
     </br>
-    <input type="button" onclick="history.back()" value="戻る">
+    <button type="button" onclick="history.back()">戻る</button>
     </div>
 </body>
 </html>

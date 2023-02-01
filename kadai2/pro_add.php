@@ -51,7 +51,7 @@
 </table>
       <br/>
       <div class="button">
-      <button type="button" onclick="history.back()">戻る</button>
+      <a href="pro_list.php"><button type="button">戻る</button></a>
       <button type="submit">ＯＫ</button>
       </div>
     </form>
